@@ -46,7 +46,7 @@ describe('Интеграционные тесты', () => {
       cy.get('.t-input-password').type('неправильный пароль');
       cy.get('.t-submit').click();
 
-      cy.get('.t-error-password').should('contain', 'Пароль указан не верно');
+      cy.get('.t-error-password').should('contain', 'Фамилия указана не верно');
     });
   });
 
